@@ -1,3 +1,4 @@
+// background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)
 *
 	padding: 0
 	margin: 0
@@ -17,7 +18,7 @@ body
 	background: url(xs/img/header-bg.gif) no-repeat
 	background-size: cover
 	background-position: top center
-	height: 90vw
+	height: 500px
 	&__logo
 		height: 230px
 		background: url(xs/img/logo.png) no-repeat
@@ -26,11 +27,9 @@ body
 	&__nav-block
 		height: 200px
 	&__nav-button
-		transform: rotate(-4deg)
 		text-align: center
-		font-family: "MachineC"
-		font-style: italic
-		font-size: 40px
+		font-family: "MachineC"		
+		font-size: 35px
 		// box-shadow: 0 0 35px #f9bbfc inset
 		& a
 			text-decoration: none 
@@ -40,29 +39,92 @@ body
 			-webkit-text-fill-color: transparent
 			-webkit-text-stroke-width: 0.5px
 			-webkit-text-stroke-color: #4087d8
-			padding: 0px 10px
-			letter-spacing: 0.8px
+			padding: 0px
+
 			&:hover
 				animation: blur .40s ease-out
-		
-
-	
-				
-
-		
-		
+			&:before
+				font-size: 30px
+				font-family: "Streamster"
+				color: #c84c8d
+				position: absolute
+				transform: rotate(-20deg)
+				-webkit-text-stroke-color: transparent
+				-webkit-text-fill-color: #E6266D
+				text-shadow: 2px 2px 1px #000
 			
-
-			
-
+.nav
+	&-menu a:before 
+		content: "menu"
+		top: -20px
+		left: -20px
+	&-promotions a:before 
+		content: "promotions"
+		top: -20px
+		left: -45px
+	&-gallery a:before 
+		content: "gallery"
+		top: -22px
+		left: -25px
+	&-events a:before 
+		content: "events"
+		top: -20px
+		left: -20px
+	&-radio a:before 
+		content: "radio"
+		top: -20px
+		left: -20px
 
 .main-container
-	height: 1200px
+	height: 700px
 	&__ad-block
-		height: 1000px
-		width: auto
-		background: url(xs/img/3.png) no-repeat
+		height: 700px
+		background: url(xs/img/12.png) no-repeat
 		background-size: cover
 		background-position: top center
+
+	&__ad-1 p
+		font-size: 32px
+		font-family: "SF TransRobotics"
+		padding: 20px 10px 0 150px
+		color: #ddd
+		text-shadow: 2px 2px 1px #222
+		text-align: center
+		overflow: hidden
+		height: 150px
+	&__ad-2
+		height: 280px
+		margin: 70px 0 0 0
+		padding: 0
+		& img
+			border: 2px solid black
+			height: 35vw
+		& p 
+			font-size: 20px
+			font-family: "ua_maximal_beasts"
+			padding: 0
+
+.footer-container
+	height: 500px
+	max-height: 500px
+	background-image: url(xs/img/11.gif)
+	background-size: cover
+	background-position: top center
+	&__cafe-name
+		font-family: "Streamster"
+		font-size: 78px
+		color: #EBB7F5
+		transform: rotate(-11deg) translateY(-120px) translateX(20px)
+	&__phone-number
+		font-family: "UA_blade_runner"
+		font-size: 28px
+		transform: rotate(-11deg) translateY(-160px)
+		background: linear-gradient(180deg, #000 10%, #252525 30%, #0D61BC 40%, #fff 50%, #000 51%, #151515 56%, #a83cad 65%, #f9bbfc 80%, #f9bbfc)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		-webkit-text-stroke-width: 0.5px
+		-webkit-text-stroke-color: #4087d8
+
+		
 
 
