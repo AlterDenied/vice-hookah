@@ -59,7 +59,8 @@ body
 	height: 500px
 	@media (min-width: 576px) 
 		background-image: url(sm/img/header-bg.jpg)
-		
+	@media (min-width: 768px)
+		height: 550px	
 	&__logo
 		height: 230px
 		background: url(xs/img/logo.png) no-repeat
@@ -116,10 +117,11 @@ body
 	height: 700px
 	&__ad-block
 		height: 700px
-		background: url(xs/img/12.png) no-repeat
+		background-image: url(xs/img/main-bg.jpg)
 		background-size: cover
-		background-position: top center
-
+		background-position: center
+		@media (min-width: 768px)
+			height: 820px
 	&__ad-1 p
 		font-size: 32px
 		font-family: "SF TransRobotics"
@@ -147,10 +149,14 @@ body
 
 .footer-container
 	height: 500px
-	max-height: 500px
+	
 	background-image: url(xs/img/11.gif)
 	background-size: cover
 	background-position: top center
+	@media (min-width: 768px)
+		background-image: url(md/img/footer-bg2.jpg)
+		height: 580px
+		
 	&__cafe-name
 		font-family: "Streamster"
 		font-size: 78px
@@ -163,6 +169,9 @@ body
 			font-size: 93px
 		@media (min-width: 720px)
 			font-size: 100px
+		@media (min-width: 768px)
+			transform: rotate(0deg) translateY(30px) translateX(0px)
+			font-size: 99px
 	&__phone-number
 		font-family: "UA_blade_runner"
 		font-size: 28px
@@ -170,6 +179,9 @@ body
 		@include blockbuster-text
 		@media (min-width: 576px)
 			font-size: 35px
+		@media (min-width: 768px)
+			transform: rotate(0deg) translateY(80px) translateX(0px)
+			
 		
 
 

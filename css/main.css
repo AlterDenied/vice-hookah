@@ -41,6 +41,9 @@ body {
   @media (min-width: 576px) {
     .header-container {
       background-image: url(sm/img/header-bg.jpg); } }
+  @media (min-width: 768px) {
+    .header-container {
+      height: 550px; } }
   .header-container__logo {
     height: 230px;
     background: url(xs/img/logo.png) no-repeat;
@@ -105,9 +108,12 @@ body {
   height: 700px; }
   .main-container__ad-block {
     height: 700px;
-    background: url(xs/img/12.png) no-repeat;
+    background-image: url(xs/img/main-bg.jpg);
     background-size: cover;
-    background-position: top center; }
+    background-position: center; }
+    @media (min-width: 768px) {
+      .main-container__ad-block {
+        height: 820px; } }
   .main-container__ad-1 p {
     font-size: 32px;
     font-family: "SF TransRobotics";
@@ -137,10 +143,13 @@ body {
 
 .footer-container {
   height: 500px;
-  max-height: 500px;
   background-image: url(xs/img/11.gif);
   background-size: cover;
   background-position: top center; }
+  @media (min-width: 768px) {
+    .footer-container {
+      background-image: url(md/img/footer-bg2.jpg);
+      height: 580px; } }
   .footer-container__cafe-name {
     font-family: "Streamster";
     font-size: 78px;
@@ -156,6 +165,10 @@ body {
     @media (min-width: 720px) {
       .footer-container__cafe-name {
         font-size: 100px; } }
+    @media (min-width: 768px) {
+      .footer-container__cafe-name {
+        transform: rotate(0deg) translateY(30px) translateX(0px);
+        font-size: 99px; } }
   .footer-container__phone-number {
     font-family: "UA_blade_runner";
     font-size: 28px;
@@ -171,5 +184,8 @@ body {
     @media (min-width: 576px) {
       .footer-container__phone-number {
         font-size: 35px; } }
+    @media (min-width: 768px) {
+      .footer-container__phone-number {
+        transform: rotate(0deg) translateY(80px) translateX(0px); } }
 
 /*# sourceMappingURL=main.css.map */
