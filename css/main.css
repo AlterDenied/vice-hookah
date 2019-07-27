@@ -23,6 +23,11 @@
   src: url("fonts/UA_Blade_Runner-BoldItalic.woff2") format("woff2"), url("fonts/UA_Blade_Runner-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
+@font-face {
+  font-family: "Pricedown Rus";
+  src: url("fonts/PricedownRus.woff2") format("woff2"), url("fonts/PricedownRus.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   padding: 0;
   margin: 0; }

@@ -1,31 +1,6 @@
 @import "colors"
+@import "fonts"
 
-
-@font-face 
-	font-family: 'MachineC'
-	src: url('fonts/MachineC.woff2') format('woff2'), url('fonts/MachineC.woff') format('woff')
-	font-weight: normal
-	font-style: normal
-@font-face 
-	font-family: 'Streamster'
-	src: url('fonts/Streamster.woff2') format('woff2'), url('fonts/Streamster.woff') format('woff')
-	font-weight: normal
-	font-style: normal
-@font-face 
-	font-family: 'UA_Maximal_Beasts'
-	src: url('fonts/UA_Maximal_Beasts.woff2') format('woff2'), url('fonts/UA_Maximal_Beasts.woff') format('woff')
-	font-weight: 500
-	font-style: normal
-@font-face 
-	font-family: 'SF TransRobotics'
-	src: url('fonts/SFTransRobotics.woff2') format('woff2'), url('fonts/SFTransRobotics.woff') format('woff')
-	font-weight: normal
-	font-style: normal
-@font-face 
-	font-family: 'UA_Blade_Runner'
-	src: url('fonts/UA_Blade_Runner-BoldItalic.woff2') format('woff2'), url('fonts/UA_Blade_Runner-BoldItalic.woff') format('woff')
-	font-weight: bold
-	font-style: italic
 
 @mixin blockbuster-text
 	background: linear-gradient(180deg, #000 10%, #252525 30%, #0D61BC 40%, #fff 50%, #000 51%, #151515 56%, #a83cad 65%, #f9bbfc 80%, #f9bbfc)
@@ -48,8 +23,6 @@ body
 @keyframes blur 
 	from 
 		text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,0px 0px 25px #fff,0px 0px 25px #fff,0px 0px 25px #fff,0px 0px 25px #fff,0px 0px 25px #fff,0px 0px 50px #fff,0px 0px 50px #fff,0px 0px 50px #7B96B8,0px 0px 150px #7B96B8,0px 10px 100px #7B96B8,0px 10px 100px #7B96B8,0px 10px 100px #7B96B8,0px 10px 100px #7B96B8,0px -10px 100px #7B96B8,0px -10px 100px #7B96B8
-
-
 
 
 .header-container
@@ -86,7 +59,7 @@ body
 				position: absolute
 				transform: rotate(-20deg)
 				-webkit-text-stroke-color: transparent
-				-webkit-text-fill-color: $nav-add
+				-webkit-text-fill-color: $vice-pink
 				text-shadow: 2px 2px 1px #000
 				@media (min-width: 576px)
 					font-size: 35px
