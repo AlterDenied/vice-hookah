@@ -54,16 +54,17 @@
 
 .main-container_menu {
   height: 2800px;
-  background: black; }
+  background: linear-gradient(to top, #000 1%, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, #000 99%); }
   .main-container_menu__hookahs-title p {
     font-family: "Pricedown Rus";
     font-size: 70px;
     text-align: center;
-    color: #0DBE8B; }
+    color: #0DBE8B;
+    text-shadow: 2px 2px 0px black; }
   .main-container_menu__hookahs-col {
     height: 200px;
     width: 200px;
-    background: url(xs/img/menu/item-border.png) no-repeat;
+    background: url(xs/img/menu/item-border-green.png) no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 15px; }
@@ -74,11 +75,12 @@
     font-family: "Pricedown Rus";
     font-size: 70px;
     text-align: center;
-    color: #52AEEE; }
+    color: #52AEEE;
+    text-shadow: 2px 2px 0px black; }
   .main-container_menu__drinks-col {
     height: 200px;
     width: 200px;
-    background: url(xs/img/menu/item-border.png) no-repeat;
+    background: url(xs/img/menu/item-border-blue.png) no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 15px; }
@@ -89,11 +91,12 @@
     font-family: "Pricedown Rus";
     font-size: 70px;
     text-align: center;
-    color: #EBB7F5; }
+    color: #EBB7F5;
+    text-shadow: 2px 2px 0px black; }
   .main-container_menu__snacks-col {
     height: 200px;
     width: 200px;
-    background: url(xs/img/menu/item-border.png) no-repeat;
+    background: url(xs/img/menu/item-border-pink.png) no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 15px; }
