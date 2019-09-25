@@ -30,10 +30,13 @@ body
 	background-size: cover
 	background-position: top center
 	height: 500px
+	box-shadow: inset 0 -12px 10px #000
 	@media (min-width: 576px) 
 		background-image: url(sm/img/header-bg.jpg)
 	@media (min-width: 768px)
 		height: 550px	
+	@media (min-width: 992px)
+		background-size: auto
 	&__logo
 		height: 230px
 		background: url(xs/img/logo.png) no-repeat
@@ -47,6 +50,8 @@ body
 		font-family: 'MachineC'
 		@media (min-width: 576px)
 			font-size: 45px
+		@media (min-width: 1200px)
+			font-size: 60px
 		& a
 			@include blockbuster-text
 			text-decoration: none 
@@ -64,37 +69,43 @@ body
 				@media (min-width: 576px)
 					font-size: 35px
 			
-.nav
-	&-menu a:before 
-		content: "menu"
-		top: -20px
-		left: -20px
-	&-promotions a:before 
-		content: "promotions"
-		top: -20px
-		left: -45px
-	&-gallery a:before 
-		content: "gallery"
-		top: -22px
-		left: -25px
-	&-events a:before 
-		content: "events"
-		top: -20px
-		left: -20px
-	&-radio a:before 
-		content: "radio"
-		top: -20px
-		left: -20px
+@each $name, $top, $left in (menu, -20px, -20px), (promotions, -20px, -45px), (gallery, -22px, -25px), (events, -20px, -20px), (radio, -20px, -20px)
+	.nav
+		&-#{$name} a:before 
+			content: '#{$name}'
+			top: #{$top}
+			left: #{$left}
+	// &-promotions a:before 
+	// 	content: "promotions"
+	// 	top: -20px
+	// 	left: -45px
+	// &-gallery a:before 
+	// 	content: "gallery"
+	// 	top: -22px
+	// 	left: -25px
+	// &-events a:before 
+	// 	content: "events"
+	// 	top: -20px
+	// 	left: -20px
+	// &-radio a:before 
+	// 	content: "radio"
+	// 	top: -20px
+	// 	left: -20px
 
 .main-container
 	height: 700px
 	&__ad-block
 		height: 700px
+		box-shadow: inset 0 12px 10px #000, inset 0 -125px 10px #000
 		background-image: url(xs/img/main-bg.jpg)
 		background-size: cover
 		background-position: center
 		@media (min-width: 768px)
 			height: 820px
+		@media (min-width: 992px)
+			background-image: url(lg/img/main-bg.jpg)
+			background-size: auto
+			background-position: top center
 	&__ad-1 p
 		font-size: 32px
 		font-family: "SF TransRobotics"
@@ -122,14 +133,15 @@ body
 
 .footer-container
 	height: 500px
-	
+	box-shadow: inset 0 12px 10px #000
 	background-image: url(xs/img/11.gif)
 	background-size: cover
-	background-position: top center
+	background-position: center
 	@media (min-width: 768px)
-		background-image: url(md/img/footer-bg2.jpg)
+		background-image: url(md/img/footer-bg.jpg)
 		height: 580px
-		
+	@media (min-width: 992px)
+		background-size: auto
 	&__cafe-name
 		font-family: "Streamster"
 		font-size: 78px
@@ -143,8 +155,9 @@ body
 		@media (min-width: 720px)
 			font-size: 100px
 		@media (min-width: 768px)
-			transform: rotate(0deg) translateY(30px) translateX(0px)
-			font-size: 99px
+			transform: rotate(-11deg) translateY(30px) translateX(20px)
+		@media (min-width: 992px)
+			font-size: 120px
 	&__phone-number
 		font-family: "UA_blade_runner"
 		font-size: 28px
@@ -154,6 +167,9 @@ body
 			font-size: 35px
 		@media (min-width: 768px)
 			transform: rotate(0deg) translateY(80px) translateX(0px)
+		@media (min-width: 992px)
+			font-size: 50px
+			transform: translateY(50px) translateX(0px)
 			
 		
 

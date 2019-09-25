@@ -42,13 +42,17 @@ body {
   background: url(xs/img/header-bg.gif) no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 500px; }
+  height: 500px;
+  box-shadow: inset 0 -12px 10px #000; }
   @media (min-width: 576px) {
     .header-container {
       background-image: url(sm/img/header-bg.jpg); } }
   @media (min-width: 768px) {
     .header-container {
       height: 550px; } }
+  @media (min-width: 992px) {
+    .header-container {
+      background-size: auto; } }
   .header-container__logo {
     height: 230px;
     background: url(xs/img/logo.png) no-repeat;
@@ -63,6 +67,9 @@ body {
     @media (min-width: 576px) {
       .header-container__nav-button {
         font-size: 45px; } }
+    @media (min-width: 1200px) {
+      .header-container__nav-button {
+        font-size: 60px; } }
     .header-container__nav-button a {
       background: linear-gradient(180deg, #000 10%, #252525 30%, #0D61BC 40%, #fff 50%, #000 51%, #151515 56%, #a83cad 65%, #f9bbfc 80%, #f9bbfc);
       -webkit-background-clip: text;
@@ -92,18 +99,22 @@ body {
   content: "menu";
   top: -20px;
   left: -20px; }
+
 .nav-promotions a:before {
   content: "promotions";
   top: -20px;
   left: -45px; }
+
 .nav-gallery a:before {
   content: "gallery";
   top: -22px;
   left: -25px; }
+
 .nav-events a:before {
   content: "events";
   top: -20px;
   left: -20px; }
+
 .nav-radio a:before {
   content: "radio";
   top: -20px;
@@ -113,12 +124,18 @@ body {
   height: 700px; }
   .main-container__ad-block {
     height: 700px;
+    box-shadow: inset 0 12px 10px #000, inset 0 -125px 10px #000;
     background-image: url(xs/img/main-bg.jpg);
     background-size: cover;
     background-position: center; }
     @media (min-width: 768px) {
       .main-container__ad-block {
         height: 820px; } }
+    @media (min-width: 992px) {
+      .main-container__ad-block {
+        background-image: url(lg/img/main-bg.jpg);
+        background-size: auto;
+        background-position: top center; } }
   .main-container__ad-1 p {
     font-size: 32px;
     font-family: "SF TransRobotics";
@@ -148,13 +165,17 @@ body {
 
 .footer-container {
   height: 500px;
+  box-shadow: inset 0 12px 10px #000;
   background-image: url(xs/img/11.gif);
   background-size: cover;
-  background-position: top center; }
+  background-position: center; }
   @media (min-width: 768px) {
     .footer-container {
-      background-image: url(md/img/footer-bg2.jpg);
+      background-image: url(md/img/footer-bg.jpg);
       height: 580px; } }
+  @media (min-width: 992px) {
+    .footer-container {
+      background-size: auto; } }
   .footer-container__cafe-name {
     font-family: "Streamster";
     font-size: 78px;
@@ -172,8 +193,10 @@ body {
         font-size: 100px; } }
     @media (min-width: 768px) {
       .footer-container__cafe-name {
-        transform: rotate(0deg) translateY(30px) translateX(0px);
-        font-size: 99px; } }
+        transform: rotate(-11deg) translateY(30px) translateX(20px); } }
+    @media (min-width: 992px) {
+      .footer-container__cafe-name {
+        font-size: 120px; } }
   .footer-container__phone-number {
     font-family: "UA_blade_runner";
     font-size: 28px;
@@ -192,5 +215,9 @@ body {
     @media (min-width: 768px) {
       .footer-container__phone-number {
         transform: rotate(0deg) translateY(80px) translateX(0px); } }
+    @media (min-width: 992px) {
+      .footer-container__phone-number {
+        font-size: 50px;
+        transform: translateY(50px) translateX(0px); } }
 
 /*# sourceMappingURL=main.css.map */
