@@ -177,6 +177,7 @@ body {
     .footer-container {
       background-size: auto; } }
   .footer-container__cafe-name {
+    display: flex;
     font-family: "Streamster";
     font-size: 78px;
     color: #EBB7F5;
